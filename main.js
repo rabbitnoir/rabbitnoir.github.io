@@ -1,6 +1,6 @@
 var http = require('http');
 var fs = require('fs');
-window.alert(5 + 6);
+document.write(5 + 6);
 var app = http.createServer(function(request,response){
     var url = request.url;
     if(request.url == '/'){
