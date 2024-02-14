@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<!-- emmet 축약 보기 입력 ? 편하다! !탭하면 html기본베이스 나온다 -->
+<html lang="ko">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Test page</title>    
+
+<script type="text/javascript" nonce="30ac1c4f42214e53a9ebd8ec5f6" src="//local.adguard.org?ts=1674998131274&amp;type=content-script&amp;dmn=uvu.netlify.app&amp;pth=%2F&amp;app=chrome.exe&amp;css=3&amp;js=1&amp;rel=1&amp;rji=1&amp;sbe=1"></script>
+<script type="text/javascript" nonce="30ac1c4f42214e53a9ebd8ec5f6" src="//local.adguard.org?ts=1674998131274&amp;name=AdGuard%20Extra&amp;name=AdGuard%20Popup%20Blocker&amp;type=user-script"></script><link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+<!-- 폰츠.구글.컴/아이콘즈 -->
+
+<link href="style.css" rel="stylesheet">
+<!-- 스타일 CSS 파일 관련 / css파일 만들고 꾸미기 -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#hide").click(function(){
+    $("p").hide();
+  });
+  $("#show").click(function(){
+    $("p").show();
+  });
+});
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("#div1").fadeToggle(1000);
+    $("#div2").fadeToggle(650);
+    $("#div3").fadeToggle();
+  });
+});
+</script>
+
+<script src="main.js"></script>
+<script src="script2.js"></script>
+
+
+</head>
+
+<body>
+
+    <p>1</p>
+    2<br>3
+    4
+
+<input type="button" id="hw" value="Hello world" />
+
+
+    
+<p>Demonstrate fadeToggle() with different speed parameters.</p>
+
+<button>Click to fade in/out boxes</button><br><br>
+
+<div id="div1" style="width:80px;height:80px;background-color:red;"></div>
+<br>
+<div id="div2" style="width:80px;height:80px;background-color:green;"></div>
+<br>
+<div id="div3" style="width:80px;height:80px;background-color:blue;"></div>
+
+
+    <h1>good to be title</h1>
+    <h2>secondary title</h2>
+    <h3>maybe the body content?</h3>
+    <h4> 4th is basic? </h4>
+    <!--1부터 순서대로 사용 해야함 
+    이건 나만 볼 수 있는 주석 같은 느낌 -->
+    <p>한 &nbsp;&nbsp;&nbsp; 단락</p>
+    <p>두번째 단락</p>
+    <img src="https://notion-emojis.s3-us-west-2.amazonaws.com/prod/svg-twitter/1f384.svg" width=400 height=600>
+    <br>
+    <!-- ./image/???.jpg -->
+    <!-- ../image~ <= 상위폴더 -->
+    <!-- alt="대체 텍스트를 보여줌" -->
+    <span class="material-icons-outlined">
+        fingerprint
+        </span>
+
+    <a href="http://google.com" target="_blank"> aa </a>
+    <strong> 볼드 느낌, html 문법적으로 강조되었다는 의미가 있다 </strong>
+    <em> embody? nono italic </em>
+    <b>bold html 문법적으론 강조 X 그냥 시각적으로만 이렇게 보임</b>
+    <i>italic 위와 같음 </i>
+    <ul>
+        <li>list 1</li>
+        <li>list 2</li>
+        <!-- 순서가 없는 . 으로면 각각 표시된 목록 -->
+    </ul>
+    <ol>
+        <li>list 1</li>
+        <li>list 2</li>
+        <!-- 넘버링 된 순서가 있는 1,2,3, 목록 -->
+    </ol>
+    <dl>
+        <dt>용어의 정리</dt>
+        <dd>용어의 내용</dd>
+        <!-- 메뉴- 설명 같은 느낌 설명은 들여써짐 / 별로 안예쁨 -->
+    </dl>
+
+    <p>If you click on the "Hide" button, I will disappear.</p>
+
+    <button id="hide">Hide</button>
+    <button id="show">Show</button>
+    
+
+    <script src="test_console.js"></script>
+
+    <!-- 주석 컨트롤 물음표 
+    -->
+    
+    <div class="wrap">
+    <p id="dynamic" class="lg-text">
+        hello world+_+
+    </p>
+    <p class="sm-text">world is getting bigger</p>
+    </div>
+
+    
+</body>
+
+</html>
